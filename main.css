@@ -1,0 +1,62 @@
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #fbf6ff;
+    --green: #4fff4b;
+}
+
+
+section.informacoes{
+    display: flex;
+    gap: 5em;
+}
+
+h3{
+    color: var(--purple-bg);
+    font-size: 1.5em;
+}
+
+.principais-tecnicas{
+    border-bottom: 3px solid var(--light-purple);
+    padding-bottom: .6em;
+}
+
+main p{
+   margin: .6em 0;
+   line-height: 1.4em;
+}
+
+section.react div{
+   width: 50%;
+}
+
+section.card-img{
+    display: flex;
+    gap: 1em;
+}
+
+section.card-img img{
+   width:calc(100%);
+}
+
+@media screen and (max-width:1200px){
+    section.informacoes{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    section.informacoes div:first-child img{
+        width: 100%;
+    }
+    section.react div{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px){
+    section.card-img{
+        flex-wrap: wrap;
+    }
+}
+
